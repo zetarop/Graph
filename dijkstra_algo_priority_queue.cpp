@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 #define ve vector
 #define pb push_back
-#define N 1000000007
+#define inf 1000000007
 
 class solve
 {
@@ -10,13 +10,13 @@ class solve
 	int srcVer;		//source vertex 
 	ve<ve<pair<int,int> > > adj;
 	ve<int> mark;
-	ve<int> d;
+	ve<int> d;    //stores shortest distance to each node from source vertex
 public:
 	solve()
 	{
 		cin>>n>>m;
 		adj.resize(n);
-		d.resize(n,N);
+		d.resize(n,inf);    // Initialised to inf
 		mark.resize(n,0);
 		for(int i=0;i<m;i++)
 		{
