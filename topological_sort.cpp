@@ -1,3 +1,8 @@
+/*
+   Topological sort is only possible for directed acyclic graph.
+   Acyclic graph means graph with no cycle.
+*/
+
 #include<bits/stdc++.h>
 #define ve vector
 #define pb push_back
