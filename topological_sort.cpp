@@ -26,17 +26,22 @@ void dfs(int u)
 	S.push(u);
 }
 
-void topological_sort()
+void print_stack(stack<int> S)
 {
-	for(int i=0;i<n;i++)
-		if(!mark[i])
-			dfs(i);
 	while(!S.empty())
 	{
 		int t=S.top();
 		cout<<t<<" ";
 		S.pop();
 	}
+}
+
+void topological_sort()
+{
+	for(int i=0;i<n;i++)
+		if(!mark[i])
+			dfs(i);
+	print_stack(S);
 }
 
 int main()
