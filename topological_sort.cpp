@@ -1,5 +1,5 @@
 /*
-   Topological sort is only possible for directed acyclic graph.
+   Topological sort is possible for directed acyclic graph only.
    Acyclic graph means graph with no cycle.
 */
 
