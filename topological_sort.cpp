@@ -1,6 +1,7 @@
 /*
    Topological sort is possible for directed acyclic graph only.
    Acyclic graph means graph with no cycle.
+   There can be multiple topological ordering for a given graph.
 */
 
 #include<bits/stdc++.h>
