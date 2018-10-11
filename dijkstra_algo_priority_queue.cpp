@@ -51,8 +51,11 @@ public:
 			for(auto a:adj[t])
 			{
 				if(d[a.first] > d[t] + a.second)
+				{
 					d[a.first] = d[t] + a.second;
-				pq.push({d[a.first], a.first});
+					pq.push({d[a.first], a.first});
+				}
+				
 			}
 		}
 		for(auto a:d)
