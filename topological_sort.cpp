@@ -1,6 +1,6 @@
 /*
    Topological sort is possible for directed acyclic graph only.
-   Acyclic graph means graph with no cycle.
+   Acyclic graph i.e graph with no cycle.
    There can be multiple topological ordering for a given graph.
 */
 
