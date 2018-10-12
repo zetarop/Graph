@@ -45,7 +45,7 @@ int main()
 		adj[v].pb({u,w});
 	}
 
-	int u,v;
+	int u,v;   // u:source vertex , v: destination vertex
 	cin>>u>>v;
 	u--,v--;
 	dfs(u,v,0);
